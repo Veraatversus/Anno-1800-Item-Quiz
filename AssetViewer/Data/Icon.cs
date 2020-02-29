@@ -19,7 +19,7 @@ namespace AssetViewer.Data {
 
     public Icon(XElement item) {
       if (!String.IsNullOrEmpty(item.Element("Filename")?.Value)) {
-        this.Filename = $"/AssetViewer;component/Resources/{item.Element("Filename").Value}";
+        this.Filename = $"/Anno1800ItemQuiz;component/Resources/{item.Element("Filename").Value}";
       }
     }
 

@@ -7,7 +7,7 @@
     <ProjectGuid>{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>AssetViewer</RootNamespace>
-    <AssemblyName>AssetViewer</AssemblyName>
+    <AssemblyName>Anno1800ItemQuiz</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -96,8 +96,14 @@
       <DependentUpon>ItemCard.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ItemsBase.cs" />
+    <Compile Include="Controls\PictureMillionär.xaml.cs">
+      <DependentUpon>PictureMillionär.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PoolToTree.xaml.cs">
       <DependentUpon>PoolToTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Quiz.xaml.cs">
+      <DependentUpon>Quiz.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ThirdParty.xaml.cs">
       <DependentUpon>ThirdParty.xaml</DependentUpon>
@@ -115,6 +121,7 @@
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\Allocation.cs" />
+    <Compile Include="Data\Choice.cs" />
     <Compile Include="Data\Description.cs" />
     <Compile Include="Data\DescriptionFontStyle.cs" />
     <Compile Include="Data\DummyDescription.cs" />
@@ -202,8 +209,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\PictureMillionär.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\PoolToTree.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Quiz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\ThirdParty.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -1975,7 +1990,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="AssetViewer_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="AssetViewer.Controls.Quiz"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AssetViewer.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+    <TabControl x:Name="tabControl" Background="Transparent" >
+      <TabItem Height="50" Header="TabItem" Background="Green">
+        <Grid Background="Transparent"/>
+      </TabItem>
+      <TabItem Header="TabItem">
+        <Grid Background="#FFE5E5E5"/>
+      </TabItem>
+    </TabControl>
+
+  </Grid>
+</UserControl>

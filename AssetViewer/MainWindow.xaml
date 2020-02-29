@@ -6,7 +6,7 @@
   xmlns:converter="clr-namespace:AssetViewer.Converter"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-  Title="Anno 1800 - Asset Viewer"
+  Title="Anno 1800 - Item Quiz"
   Width="850"
   Height="650"
   MinWidth="900"
@@ -44,14 +44,15 @@
       </Grid.ColumnDefinitions>
       <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Converter={StaticResource Description}, ConverterParameter=-101}" />
       <ComboBox x:Name="ComboBoxAsset" Grid.Column="2" SelectionChanged="ComboBoxAsset_OnSelectionChanged">
-        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-102}" />
+        <TextBlock Text="Picture Millionär" />
+        <!--<TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-102}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-105}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-110}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-120}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-4}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-130}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-1221}" />
-        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=20106}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=20106}" />-->
         <!--<TextBlock Text="Eli Lootpool" />-->
       </ComboBox>
       <ComboBox
@@ -61,7 +62,13 @@
         SelectedIndex="0" />
     </Grid>
     <Grid Grid.Row="2">
-      <ContentPresenter x:Name="Presenter" />
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="171*"/>
+        <ColumnDefinition Width="701*"/>
+      </Grid.ColumnDefinitions>
+      <ContentPresenter x:Name="Presenter" Grid.ColumnSpan="2" />
+
+      <!--<ContentPresenter x:Name="Presenter" />-->
     </Grid>
     <!--<Grid Grid.Row="4">
       <Grid.ColumnDefinitions>

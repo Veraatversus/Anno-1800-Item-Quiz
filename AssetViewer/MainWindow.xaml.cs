@@ -37,40 +37,43 @@ namespace AssetViewer {
       if (this.Presenter != null) {
         switch (this.ComboBoxAsset.SelectedIndex) {
           case 0:
-            this.Presenter.Content = new GuildhouseItem();
+            this.Presenter.Content = new PictureMillionär();
             break;
+            //case 0:
+            //  this.Presenter.Content = new GuildhouseItem();
+            //  break;
 
-          case 1:
-            this.Presenter.Content = new Monument();
-            break;
+            //case 1:
+            //  this.Presenter.Content = new Monument();
+            //  break;
 
-          case 2:
-            this.Presenter.Content = new ThirdParty();
-            break;
+            //case 2:
+            //  this.Presenter.Content = new ThirdParty();
+            //  break;
 
-          case 3:
-            this.Presenter.Content = new ExpeditionEvents();
-            break;
+            //case 3:
+            //  this.Presenter.Content = new ExpeditionEvents();
+            //  break;
 
-          case 4:
-            this.Presenter.Content = new Tourism();
-            break;
+            //case 4:
+            //  this.Presenter.Content = new Tourism();
+            //  break;
 
-          case 5:
-            this.Presenter.Content = new Buildings();
-            break;
+            //case 5:
+            //  this.Presenter.Content = new Buildings();
+            //  break;
 
-          case 6:
-            this.Presenter.Content = new ItemSets();
-            break;
+            //case 6:
+            //  this.Presenter.Content = new ItemSets();
+            //  break;
 
-          case 7:
-            this.Presenter.Content = new CityFestival();
-            break;
+            //case 7:
+            //  this.Presenter.Content = new CityFestival();
+            //  break;
 
-          case 8:
-            this.Presenter.Content = new PoolToTree();
-            break;
+            //case 8:
+            //  this.Presenter.Content = new PoolToTree();
+            //  break;
         }
       }
     }

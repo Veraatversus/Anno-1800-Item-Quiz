@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDA", "RDA\RDA.csproj", "{4567E64C-D7FE-4873-8424-C5F6461D9463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetViewer", "AssetViewer\AssetViewer.csproj", "{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anno1800ItemQuiz", "AssetViewer\Anno1800ItemQuiz.csproj", "{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
